@@ -7,7 +7,7 @@ import 'interceptors.dart';
 import 'jokes_list.dart';
 
 // Ключ берётся на https://api-ninjas.com
-const apiKey = 'ВСТАВЬ_СВОЙ_КЛЮЧ';
+const apiKey = 'ЗАГЛУШКА';
 
 void setup() {
   final dio = Dio(
