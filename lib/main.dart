@@ -6,8 +6,8 @@ import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'interceptors.dart';
 import 'jokes_list.dart';
 
-
-const apiKey = 'UJytJt1DlqMJ4DNWVz4lYzBn6lXLv90tnI8djlZk';
+// Ключ берётся на https://api-ninjas.com
+const apiKey = 'ВСТАВЬ_СВОЙ_КЛЮЧ';
 
 void setup() {
   final dio = Dio(
@@ -36,11 +36,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Dad Jokes')),
-        body: const JokesList(),
-      ),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: JokesScreen(),
     );
   }
 }
